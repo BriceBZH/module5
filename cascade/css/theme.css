@@ -1,0 +1,39 @@
+h2 {
+	margin:0;
+}
+article + article {
+	margin-top: 2em;
+}
+code {
+	color:#fff;
+	background-color: #333;
+	padding-left:0.5em;
+	padding-right: 0.5em;
+}
+article .inner {
+	color: purple;
+}
+.outer p {
+	color: green;
+}
+.alice p {
+	color: blue;
+}
+.alice {
+	color: violet;
+}
+.alice .bob {
+	color: orangered;
+}
+p.bob {
+	color: orange;
+}
+.bob {
+	color: yellow;
+}
+.base .important {
+	color: green;
+}
+.important {
+	color: red !important;
+}

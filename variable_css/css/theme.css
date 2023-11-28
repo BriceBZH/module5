@@ -1,0 +1,17 @@
+:root {
+	--color-orange: #DD5735;
+	--color-white : #fff;
+	--color-text : #444;
+}
+.more {
+	padding: 1em;
+	background-color: var(--color-orange);
+	color: var(--color-white);
+}
+body {
+	color: var(--color-text);
+	font-family: arial;
+}
+h2 {
+	font-size: 2rem;
+}
