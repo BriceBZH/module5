@@ -1,0 +1,46 @@
+.container {
+  color: #369;
+}
+.container h1 {
+  color: #c33;
+}
+
+.art h2 {
+  color: #a32929;
+}
+.art section {
+  border: solid #a32929 1px;
+  padding: 1em;
+}
+.art section h3 {
+  color: #7a1f1f;
+}
+
+.block1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.block1 p {
+  width: 49%;
+}
+
+.block2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.block2 p {
+  width: 32%;
+}
+
+.block3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.block3 p {
+  width: 19%;
+}
+
+/*# sourceMappingURL=theme.css.map */

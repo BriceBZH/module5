@@ -1,0 +1,43 @@
+@import "vars";
+.container {
+    color: $color;
+    h1 {
+        color: $color_h1;
+    }
+}
+.art {
+    h2 {
+        color: $color_h2;
+    }
+    section {
+        border: $style_border $color_border $size_border;
+        padding: $pad_section;
+        h3 {
+            color: $color_h3;
+        }
+    }
+}
+.block1 {
+    display: $display;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    p {
+        width: $width_b1;
+    }
+}
+.block2 {
+    display: $display;
+    flex-wrap: $flex_wrap;
+    justify-content: $justify;
+    p {
+        width: $width_b2;
+    }
+}
+.block3 {
+    display: $display;
+    flex-wrap: $flex_wrap;
+    justify-content: $justify;
+    p {
+        width: $width_b3;
+    }
+}

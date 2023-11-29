@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Introduction à Bootstrap, premiers tests">
+	<title>Bootstrap</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+
+	<header class="bg-secondary text-light text-center p-3 mb-5">
+		<h1>Bootstrap</h1>
+		<p class="lead">Introduction à Bootstrap, premiers tests</p>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand text-start w-25" href="#"><img src="img/bootstrap-logo.png" class="img-fluid"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link active" aria-current="page" href="#">Accueil</a>
+						<a class="nav-link" href="#">Tarifs</a>
+						<a class="nav-link" href="#">Réservations</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container">
+
+		<h2>Un exemple de titre h2</h2>
+
+		<p>Un exemple de texte dans un paragraphe contenant un <a href="#">Lien vide</a> (dont l'adresse est simplement l'ancre vide #)</p>
+
+		<div class="alert alert-primary w-50 mb-5">Un exemple de div ayant les classes "alert alert-primary" pour son apparence et une taille de classe "w-50" pour sa taille.</div>
+		<div class="text-center">
+			<img src="img/death-valley-1.jpg" class="img-fluid rounded w-50" alt="Monument Valley">
+		</div>
+		<section class="row my-5">
+			<h3 class="card-title">Death Valley</h3>
+			<article class="col-lg-4 col-sm-6 p-2">
+				<div class="card">
+					<img src="img/death-valley-2.jpg" class="card-img-top" alt="">
+					<div class="card-body">
+						<h4 class="card-title h3">Une carte</h4>
+						<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique atque debitis explicabo praesentium placeat optio dignissimos est quo veniam in!</p>
+						<a href="#" class="btn btn-outline-info">Lire la suite</a>
+					</div>
+				</div>
+			</article>
+			<article class="col-lg-4 col-sm-6 p-2">
+				<div class="card">
+					<img src="img/death-valley-3.jpg" class="card-img-top" alt="">
+					<div class="card-body">
+						<h4 class="card-title h3">Une carte</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores culpa sint magni quo saepe debitis corporis dignissimos voluptates fugit repellat!</p>
+						<a href="#" class="btn btn-outline-info">Lire la suite</a>
+					</div>
+				</div>
+			</article>
+			<article class="col-lg-4 col-sm-6 p-2">
+				<div class="card">
+					<img src="img/death-valley-4.jpg" class="card-img-top" alt="">
+					<div class="card-body">
+						<h4 class="card-title h3">Une carte</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Odio tempore numquam ea nostrum! Soluta, earum harum, quibusdam minima accusamus neque?</p>
+						<a href="#" class="btn btn-outline-info">Lire la suite</a>
+					</div>
+				</div>
+			</article>
+		</section>
+		<h3>Un tableau</h3>
+		<table class="table table-striped my-5">
+			<thead>
+				<tr>
+					<th>Entête 1</th>
+					<th>Entête 2</th>
+					<th>Entête 3</th>
+					<th>Entête 4</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th>Pied 1</th>
+					<th>Pied 2</th>
+					<th>Pied 3</th>
+					<th>Pied 4</th>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>Case 1</td>
+					<td>Case 2</td>
+					<td>Case 3</td>
+					<td>Case 4</td>
+				</tr>
+				<tr>
+					<td>Case 5</td>
+					<td>Case 6</td>
+					<td>Case 7</td>
+					<td>Case 8</td>
+				</tr>
+				<tr>
+					<td>Case 9</td>
+					<td>Case 10</td>
+					<td>Case 11</td>
+					<td>Case 12</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>Exemple de formulaire</h3>
+		<form action="index.html" method="post" class="my-5">
+			<fieldset>
+				<legend>Mes coordonnées</legend>
+				<div class="row">
+					<div class="mb-3 col-sm-6 col-md-4">
+						<label for="firstname" class="form-label">Prénom</label>
+						<div class="value"><input class="form-control" type="text" id="firstname"></div>
+					</div>
+					<div class="mb-3 col-sm-6 col-md-4">
+						<label for="lastname" class="form-label">Nom</label>
+						<div class="value"><input class="form-control" type="text" id="lastname"></div>
+					</div>
+					<div class="mb-3 col-sm-12 col-md-4">
+						<label for="email" class="form-label">Email</label>
+						<div class="value"><input class="form-control" type="email" id="email"></div>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Ma demande</legend>
+				<div class="form-group mb-3">
+					<select class="form-select" name="object">
+						<option value="0">Sélectionner l'objet de ma demande...</option>
+						<option value="q">Général</option>
+						<option value="g">Bug gênant</option>
+						<option value="b">Bug bloquant</option>
+					</select>
+				</div>
+				<div class="mb-3">
+					<label for="query" class="form-label">Mon message</label>
+					<textarea class="form-control" rows="4" id="query"></textarea>
+				</div>
+				<div class="mb-3">
+					<label for="formFile" class="form-label">Télécharger un fichier</label>
+					<input class="form-control" type="file" id="formFile">
+				</div>
+			</fieldset>
+			<div class="navbar">
+				<button type="submit" class="btn btn-secondary">Valider le formulaire</button>
+			</div>
+		</form>
+
+	<nav aria-label="pagination">
+		<ul class="pagination d-flex justify-content-center">
+			<li class="page-item disabled">
+				<a class="page-link">Précédent</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">1</a>
+			</li>
+			<li class="page-item active" aria-current="page">
+				<a class="page-link" href="#">2</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">3</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link" href="#">Suivant</a>
+			</li>
+		</ul>
+	</nav>
+
+	</main>
+
+	<footer class="container-fluid text-center p-3 bg-dark text-white">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="img/logo-3WA-small.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Catherine Denos.</p>
+	</footer>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
